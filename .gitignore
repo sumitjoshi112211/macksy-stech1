@@ -19,7 +19,6 @@ Thumbs.db
 # Logs
 *.log
 .cache/
-*.mp4
 
 node_modules
-*.mp4
+
