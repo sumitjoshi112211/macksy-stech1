@@ -4,6 +4,9 @@ import dataImg from "../../assets/data.jpg";
 import predictiveImg from "../../assets/predictive salesdata.jpg";
 import marketImg from "../../assets/marketanalysisdata.jpg";
 import customerImg from "../../assets/customerdashboard data.jpg";
+import trainingCertificate from "../../assets/Training Certificate2.png";
+import internshipCertificate from "../../assets/internship Certificate1.png";
+import alumniImage from "../../assets/Alumni.png";
 import ProgramPlan from "../../components/programPlan/ProgramPlan";
 import AlumniTestimonial from "../../components/alumniTestimonial/AlumniTestimonial";
 
@@ -292,14 +295,14 @@ const DataScienceDetail = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex justify-center">
               <img
-                src="/src/assets/Training Certificate2.png"
+                src={trainingCertificate}
                 alt="Training Certificate"
                 className="w-full h-auto max-w-md object-contain"
               />
             </div>
             <div className="flex justify-center">
               <img
-                src="/src/assets/internship Certificate1.png"
+                src={internshipCertificate}
                 alt="Internship Certificate"
                 className="w-full h-auto max-w-md object-contain"
               />
@@ -315,7 +318,7 @@ const DataScienceDetail = () => {
         <div className="w-full px-0">
           <div className="flex justify-center items-center">
             <img
-              src="/src/assets/Alumni.png"
+              src={alumniImage}
               alt="Alumni Companies"
               className="w-full h-auto object-contain"
             />

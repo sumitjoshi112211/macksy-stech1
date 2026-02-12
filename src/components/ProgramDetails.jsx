@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import trainingCertificate from "../assets/Training Certificate2.png";
+import internshipCertificate from "../assets/internship Certificate1.png";
+import alumniImage from "../assets/Alumni.png";
 import ProgramPlan from "./programPlan/ProgramPlan";
 import AlumniTestimonial from "./alumniTestimonial/AlumniTestimonial";
 
@@ -242,33 +245,28 @@ const ProgramDetails = ({ programData }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex justify-center">
               <img
-                src="/src/assets/Training Certificate2.png"
+                src={trainingCertificate}
                 alt="Training Certificate"
                 className="w-full h-auto max-w-md object-contain"
               />
             </div>
             <div className="flex justify-center">
               <img
-                src="/src/assets/internship Certificate1.png"
+                src={internshipCertificate}
                 alt="Internship Certificate"
                 className="w-full h-auto max-w-md object-contain"
               />
             </div>
           </div>
-        </div>
-      </section>
 
-      <ProgramPlan />
-
-      {/* ALUMNI COMPANIES SECTION */}
-      <section className="w-full bg-white py-8">
-        <div className="w-full px-0">
-          <div className="flex justify-center items-center">
-            <img
-              src="/src/assets/Alumni.png"
-              alt="Alumni Companies"
-              className="w-full h-auto object-contain"
-            />
+          <div className="w-full px-0">
+            <div className="flex justify-center items-center">
+              <img
+                src={alumniImage}
+                alt="Alumni Companies"
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
