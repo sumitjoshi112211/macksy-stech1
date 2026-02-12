@@ -29,11 +29,12 @@ const letterAnim = {
 const ScrollTextVideo = () => {
   return (
     <>
+      {/* spacing */}
       <div className="h-10 md:h-14"></div>
 
       <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen overflow-hidden">
         
-        {/* BACKGROUND VIDEO FROM PUBLIC FOLDER */}
+        {/* Background Video (from public folder) */}
         <video
           autoPlay
           muted
@@ -44,8 +45,10 @@ const ScrollTextVideo = () => {
           <source src="/promo.mp4" type="video/mp4" />
         </video>
 
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
+        {/* Animated Text */}
         <div className="relative z-10 h-full flex items-center justify-center">
           <motion.h1
             variants={container}
@@ -55,7 +58,11 @@ const ScrollTextVideo = () => {
             className="flex flex-wrap justify-center text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-wider"
           >
             {letters.map((char, index) => (
-              <motion.span key={index} variants={letterAnim} className="mx-1">
+              <motion.span
+                key={index}
+                variants={letterAnim}
+                className="mx-1"
+              >
                 {char === " " ? "\u00A0" : char}
               </motion.span>
             ))}
