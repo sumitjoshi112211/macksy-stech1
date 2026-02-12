@@ -12,6 +12,13 @@ import hrImg from "../assets/humanresource.png";
 import cyberImg from "../assets/cyber.png";
 import awsImg from "../assets/awscloud.png";
 import nanoImg from "../assets/nanotech.png";
+import analysisfiImg from "../assets/analysisfi.jpg";
+import portfoliofiImg from "../assets/portfoliofi.jpg";
+import resumeparaserImg from "../assets/resumeparaser.jpg";
+import cybercyberImg from "../assets/cybercyber.jpg";
+import incidentcyberImg from "../assets/incidentcyber.jpg";
+import technicalstockImg from "../assets/technicalstock.jpg";
+import tradingstockImg from "../assets/tradingstock.jpg";
 
 export const programsData = [
   {
@@ -111,8 +118,50 @@ export const programsData = [
     description: "Explore cutting-edge nano and bio technologies",
     image: nanoImg,
     link: "/programs/nanobiotech"
+  },
+  {
+    id: 15,
+    title: "Financial Analysis",
+    description: "Advanced financial analysis and portfolio management",
+    image: analysisfiImg,
+    link: "/programs/financial-analysis"
+  },
+  {
+    id: 16,
+    title: "Portfolio Management",
+    description: "Professional portfolio creation and management",
+    image: portfoliofiImg,
+    link: "/programs/portfolio-management"
+  },
+  {
+    id: 17,
+    title: "Resume Builder",
+    description: "Professional resume building and parsing tools",
+    image: resumeparaserImg,
+    link: "/programs/resume-builder"
+  },
+  {
+    id: 18,
+    title: "Advanced Cyber Security",
+    description: "Advanced cyber security and incident response",
+    image: cybercyberImg,
+    link: "/programs/advanced-cybersecurity"
+  },
+  {
+    id: 19,
+    title: "Technical Stock Trading",
+    description: "Technical analysis for stock trading",
+    image: technicalstockImg,
+    link: "/programs/technical-stock-trading"
+  },
+  {
+    id: 20,
+    title: "Trading Strategies",
+    description: "Advanced trading strategies and risk management",
+    image: tradingstockImg,
+    link: "/programs/trading-strategies"
   }
 ];
 
 export const landingPagePrograms = programsData.slice(3, 6); // Last 3 programs for landing page (Digital Marketing, Data Science, Machine Learning)
-export const allPrograms = programsData; // All 14 programs for programs page
+export const allPrograms = programsData; // All 20 programs for programs page
